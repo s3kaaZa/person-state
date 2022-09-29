@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+app-root {
+  height: 400px;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+/*# sourceMappingURL=styles.css.map */
