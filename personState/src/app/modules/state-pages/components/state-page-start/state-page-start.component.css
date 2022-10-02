@@ -5,7 +5,7 @@
 .name-panel .fillable-cards {
   width: 335px;
 }
-.name-panel .name-form, .name-panel app-common-panel {
+.name-panel .name-form, .name-panel .email-and-options-form, .name-panel app-common-panel {
   background-color: gainsboro;
   padding: 1rem;
 }
