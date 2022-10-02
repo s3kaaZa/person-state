@@ -1,3 +1,31 @@
-
+.name-panel {
+  display: flex;
+  justify-content: space-between;
+}
+.name-panel .fillable-cards {
+  width: 335px;
+}
+.name-panel .name-form, .name-panel app-common-panel {
+  background-color: gainsboro;
+  padding: 1rem;
+}
+.name-panel .name-form, .name-panel .email-and-options-form {
+  margin-bottom: 1rem;
+}
+.name-panel .form-input {
+  width: 290px;
+}
+.name-panel .email-and-options-form .radio-group {
+  display: flex;
+  flex-direction: column;
+}
+.name-panel .email-and-options-form .radio-button {
+  margin-bottom: 0.5rem;
+}
+.name-panel app-common-panel {
+  flex-basis: 250px;
+  height: 447px;
+  padding: 0;
+}
 
 /*# sourceMappingURL=state-page-start.component.css.map */

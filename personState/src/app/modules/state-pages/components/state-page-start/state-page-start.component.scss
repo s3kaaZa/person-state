@@ -1,0 +1,38 @@
+.name-panel {
+  display: flex;
+  justify-content: space-between;
+
+  .fillable-cards {
+    width: 335px;
+  }
+
+  .name-form, app-common-panel {
+    background-color: gainsboro;
+    padding: 1rem;
+  }
+
+  .name-form, .email-and-options-form {
+    margin-bottom: 1rem;
+  }
+
+  .form-input {
+    width: 290px;
+  }
+
+  .email-and-options-form {
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .radio-button {
+      margin-bottom: .5rem;
+    }
+  }
+
+  app-common-panel {
+    flex-basis: 250px;
+    height: 447px;
+    padding: 0;
+  }
+}

@@ -3,18 +3,23 @@ import { CommonModule } from '@angular/common';
 
 import {HeaderComponent} from "./components/header/header.component";
 import {RouterModule} from "@angular/router";
+import { CommonPanelComponent } from './components/common-panel/common-panel.component';
+import {MaterialModule} from "../../../material.module";
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    CommonPanelComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MaterialModule
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    CommonPanelComponent
   ]
 })
 export class SharedModule { }

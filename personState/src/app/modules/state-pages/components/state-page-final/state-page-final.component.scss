@@ -1,0 +1,23 @@
+.zip-code-panel {
+  display: flex;
+  justify-content: space-between;
+
+  .fillable-cards {
+    width: 335px;
+  }
+
+  .zip-code-form {
+    background-color: gainsboro;
+    padding: 1rem;
+  }
+
+  .form-input {
+    width: 290px;
+  }
+
+  app-common-panel {
+    flex-basis: 250px;
+    height: 447px;
+    padding: 0;
+  }
+}

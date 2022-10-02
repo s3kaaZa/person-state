@@ -1,2 +1,16 @@
 <app-header></app-header>
-<p>state-page-final works!</p>
+
+<div class="zip-code-panel">
+  <div class="fillable-cards">
+    <mat-card class="zip-code-form">
+      <form id="ZipCodeForm" [formGroup]="zipCodeGroup">
+        <mat-form-field class="form-input zip-code-input" appearance="fill">
+          <mat-label>Zip Code</mat-label>
+          <input matInput name="zipCode" formControlName="zipCode" type="number" placeholder="Zip Code" />
+        </mat-form-field>
+      </form>
+    </mat-card>
+  </div>
+
+  <app-common-panel></app-common-panel>
+</div>

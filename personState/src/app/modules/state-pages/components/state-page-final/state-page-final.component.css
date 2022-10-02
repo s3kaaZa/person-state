@@ -1,3 +1,21 @@
-
+.zip-code-panel {
+  display: flex;
+  justify-content: space-between;
+}
+.zip-code-panel .fillable-cards {
+  width: 335px;
+}
+.zip-code-panel .zip-code-form {
+  background-color: gainsboro;
+  padding: 1rem;
+}
+.zip-code-panel .form-input {
+  width: 290px;
+}
+.zip-code-panel app-common-panel {
+  flex-basis: 250px;
+  height: 447px;
+  padding: 0;
+}
 
 /*# sourceMappingURL=state-page-final.component.css.map */

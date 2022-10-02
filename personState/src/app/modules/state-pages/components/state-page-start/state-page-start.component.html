@@ -1,13 +1,45 @@
 <app-header></app-header>
-<form id="NameForm">
-  <mat-form-field appearance="fill">
-    <mat-label>Name</mat-label>
-    <input matInput name="name" formControlName="firstName" type="text" placeholder="Name" />
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Surname</mat-label>
-    <input matInput name="surname" formControlName="firstName" type="text" placeholder="Surname" />
-  </mat-form-field>
-</form>
-<p>SPStart work!</p>
+
+<div class="name-panel">
+  <div class="fillable-cards">
+    <mat-card class="name-form">
+      <form id="NameForm" [formGroup]="nameGroup">
+        <mat-form-field class="form-input name-input" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput name="name" formControlName="name" type="text" placeholder="Name" />
+        </mat-form-field>
+        <mat-form-field class="form-input surname-input" appearance="fill">
+          <mat-label>Surname</mat-label>
+          <input matInput name="surname" formControlName="surname" type="text" placeholder="Surname" />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Select country</mat-label>
+          <mat-select>
+            <mat-option value="one">Belarus</mat-option>
+            <mat-option value="two">Poland</mat-option>
+            <mat-option value="two">Ukraine</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </mat-card>
+
+    <mat-card class="email-and-options-form">
+      <form id="EmailForm" [formGroup]="emailAndOptionsGroup">
+        <mat-radio-group class="radio-group" aria-label="Select an option">
+          <mat-radio-button class="radio-button" value="1">Option 1</mat-radio-button>
+          <mat-radio-button class="radio-button" value="2">Option 2</mat-radio-button>
+          <mat-radio-button class="radio-button" value="3">Option 3</mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field class="form-input email-input" appearance="fill">
+          <mat-label>Enter email</mat-label>
+          <input matInput placeholder="example@example.com"  required>
+<!--          [formControlName]="email"-->
+        </mat-form-field>
+      </form>
+    </mat-card>
+  </div>
+
+  <app-common-panel></app-common-panel>
+</div>
 

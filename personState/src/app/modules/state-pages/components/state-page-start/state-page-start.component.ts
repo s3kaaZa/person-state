@@ -7,10 +7,23 @@ import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./state-page-start.component.scss']
 })
 export class StatePageStartComponent implements OnInit {
-  name = new FormControl('Name');
-  constructor() {
-  }
+  public nameGroup: FormGroup;
+  public emailAndOptionsGroup: FormGroup;
 
+  constructor(_formBuilder: FormBuilder) {
+    this.nameGroup = _formBuilder.group({
+      name: ['', [Validators.required]],
+      surname: ['', [Validators.required]],
+      company: ['', [Validators.required]]
+    });
+
+    this.emailAndOptionsGroup = _formBuilder.group({
+      email: ['', [
+        Validators.required,
+        Validators.email
+      ]],
+    });
+  }
   ngOnInit(): void {
     console.log(111)
   }
