@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {SaveDataService} from "../../../shared/services/save-data.service";
 
 @Component({
   selector: 'app-state-page-start',
@@ -7,18 +8,22 @@ import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./state-page-start.component.scss']
 })
 export class StatePageStartComponent implements OnInit {
-  public nameGroup: FormGroup;
-  public emailAndOptionsGroup: FormGroup;
+  public NameForm: FormGroup;
+  public EmailAndOptionsForm: FormGroup;
 
-  constructor(_formBuilder: FormBuilder) {
-    this.nameGroup = _formBuilder.group({
-      name: ['', [Validators.required]],
-      surname: ['', [Validators.required]],
-      company: ['', [Validators.required]]
+  constructor(
+    private sds: SaveDataService,
+    private formBuilder: FormBuilder
+  ) {
+    this.NameForm = formBuilder.group({
+      Name: ['', [Validators.required]],
+      Surname: ['', [Validators.required]],
+      Country: ['', [Validators.required]]
     });
 
-    this.emailAndOptionsGroup = _formBuilder.group({
-      email: ['', [
+    this.EmailAndOptionsForm = formBuilder.group({
+      RadioGroup: ['', Validators.required],
+      Email: ['', [
         Validators.required,
         Validators.email
       ]],
@@ -26,6 +31,11 @@ export class StatePageStartComponent implements OnInit {
   }
   ngOnInit(): void {
     console.log(111)
+    console.log(this)
+  }
+
+  SaveName() {
+    this.sds.SaveName(this.NameForm.value, this.EmailAndOptionsForm.value)
   }
 
 }

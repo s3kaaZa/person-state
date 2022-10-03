@@ -1,28 +1,28 @@
-.name-panel {
+.name_panel {
   display: flex;
   justify-content: space-between;
 }
-.name-panel .fillable-cards {
+.name_panel .fillable_cards {
   width: 335px;
 }
-.name-panel .name-form, .name-panel .email-and-options-form, .name-panel app-common-panel {
+.name_panel .name_form, .name_panel .email_and_options_form, .name_panel app-common-panel {
   background-color: gainsboro;
   padding: 1rem;
 }
-.name-panel .name-form, .name-panel .email-and-options-form {
+.name_panel .name_form, .name_panel .email_and_options_form {
   margin-bottom: 1rem;
 }
-.name-panel .form-input {
+.name_panel .form_input {
   width: 290px;
 }
-.name-panel .email-and-options-form .radio-group {
+.name_panel .email_and_options_form .radio_group {
   display: flex;
   flex-direction: column;
 }
-.name-panel .email-and-options-form .radio-button {
+.name_panel .email_and_options_form .radio_button {
   margin-bottom: 0.5rem;
 }
-.name-panel app-common-panel {
+.name_panel app-common-panel {
   flex-basis: 250px;
   height: 447px;
   padding: 0;

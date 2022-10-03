@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SaveDataService } from "../../services/save-data.service";
 
 @Component({
   selector: 'app-header',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private saveDataService: SaveDataService) { }
 
   ngOnInit(): void {
   }
 
   saveForm() {
-    console.log(this)
+    this.saveDataService.SaveData()
   }
 
 }

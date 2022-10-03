@@ -1,31 +1,31 @@
-.name-panel {
+.name_panel {
   display: flex;
   justify-content: space-between;
 
-  .fillable-cards {
+  .fillable_cards {
     width: 335px;
   }
 
-  .name-form, .email-and-options-form, app-common-panel {
+  .name_form, .email_and_options_form, app-common-panel {
     background-color: gainsboro;
     padding: 1rem;
   }
 
-  .name-form, .email-and-options-form {
+  .name_form, .email_and_options_form {
     margin-bottom: 1rem;
   }
 
-  .form-input {
+  .form_input {
     width: 290px;
   }
 
-  .email-and-options-form {
-    .radio-group {
+  .email_and_options_form {
+    .radio_group {
       display: flex;
       flex-direction: column;
     }
 
-    .radio-button {
+    .radio_button {
       margin-bottom: .5rem;
     }
   }

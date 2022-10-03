@@ -1,18 +1,18 @@
-.zip-code-panel {
+.zip_code_panel {
   display: flex;
   justify-content: space-between;
 }
-.zip-code-panel .fillable-cards {
+.zip_code_panel .fillable_cards {
   width: 335px;
 }
-.zip-code-panel .zip-code-form {
+.zip_code_panel .zip_code_form {
   background-color: gainsboro;
   padding: 1rem;
 }
-.zip-code-panel .form-input {
+.zip_code_panel .form_input {
   width: 290px;
 }
-.zip-code-panel app-common-panel {
+.zip_code_panel app-common-panel {
   flex-basis: 250px;
   height: 447px;
   padding: 0;

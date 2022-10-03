@@ -7,10 +7,10 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./state-page-final.component.scss']
 })
 export class StatePageFinalComponent implements OnInit {
-  public zipCodeGroup: FormGroup;
+  public zipCodeForm: FormGroup;
 
   constructor(_formBuilder: FormBuilder) {
-    this.zipCodeGroup = _formBuilder.group({
+    this.zipCodeForm = _formBuilder.group({
       zipCode: ['', [Validators.required]],
     });
   }
